@@ -1,15 +1,13 @@
 
-import java.util.*;
-
-/**
- * 
- */
 public class Cactus extends Vegetal {
-
-    /**
-     * Default constructor
-     */
-    public Cactus() {
+    public Cactus(Case lc) {
+        super(lc);
+        this.capaciteDeplacement = 1; /* Nombres de cases que le mouton peut parcourir en l'ayant ingurgité */
+        this.estMange = false;
+        this.accessibilite = true;
     }
+    public String toString(){
 
+        return "c";
+    }
 }

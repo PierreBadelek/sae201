@@ -3,18 +3,28 @@ import java.util.*;
 
 
 public class Case {
-
-    public Case() {
-    }
-
     private boolean sortie;
 
     private int posX;
 
+    private ElementCase element;
 
     private int posY;
 
+    public Case(int x, int y) {
+        this.posX = x;
+        this.posY = y;
+        this.sortie = false;
 
+    }
+
+    public void ajouterElementCase(ElementCase elementCase){
+        this.element = elementCase;
+    }
+
+    public ElementCase getElement(){
+        return this.element;
+    }
     public int getPosX() {
         return this.posX;
     }

@@ -1,4 +1,4 @@
-
+/*
 import java.util.*;
 
 
@@ -17,3 +17,5 @@ public abstract class Animal extends ElementCase {
     public abstract void deplacement();
 
 }
+
+ */

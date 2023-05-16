@@ -1,45 +1,42 @@
+import javax.lang.model.util.ElementScanner7;
 
-import java.util.*;
+public abstract class Vegetal extends ElementCase {
+    protected int capaciteDeplacement;
+    protected boolean estMange = false;
+    protected boolean accessibilite;
+    protected int cptRepousse = 0;
 
-/**
- * 
- */
-public abstract class Vegetal extends Case {
+    public Vegetal(Case lc) {
+        super(lc);
 
-    /**
-     * Default constructor
-     */
-    public Vegetal() {
     }
 
-    /**
-     * 
-     */
-    private int capaciteDeplacement;
 
-    /**
-     * 
-     */
-    private boolean estMange = False;
-
-    /**
-     * 
-     */
-    private boolean accessibilite;
-
-    /**
-     * @return
-     */
-    public int getCapaciteDeplacement() {
-        // TODO implement here
-        return 0;
-    }
-
-    /**
-     * 
-     */
     public void manger() {
-        // TODO implement here
+        this.estMange = true;
     }
 
+    public int getCapaciteDeplacement() {
+        return capaciteDeplacement;
+    }
+
+    public boolean estMange() {
+        return estMange;
+    }
+
+    public boolean getAccessibilite() {
+        return accessibilite;
+    }
+
+    protected void checkRepousse(){
+        if (this.estMange == true && this.cptRepousse+1 < 2){
+            this.cptRepousse = this.cptRepousse + 1;
+        } else if (this.cptRepousse >= 2 ){
+            repousse();
+        }
+    }
+
+    public void repousse(){
+        this.estMange = false;
+    }
 }

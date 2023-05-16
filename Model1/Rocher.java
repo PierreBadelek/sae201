@@ -1,20 +1,13 @@
+public class Rocher extends ElementCase {
+    protected boolean accessibilite;
 
-import java.util.*;
-
-/**
- * 
- */
-public class Rocher extends Case {
-
-    /**
-     * Default constructor
-     */
-    public Rocher() {
+    public Rocher(Case lc) {
+        super(lc);
+        this.accessibilite = false;
     }
 
-    /**
-     * 
-     */
-    private boolean accessibilite;
+    public String toString(){
 
+        return "r";
+    }
 }

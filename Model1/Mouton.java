@@ -1,4 +1,4 @@
-
+/*
 import java.util.*;
 
 public class Mouton extends Animal {
@@ -17,9 +17,9 @@ public class Mouton extends Animal {
 
     public abstract void manger();
 
-    /**
-     * 
-     */
+
     public abstract void deplacement();
 
 }
+
+ */
