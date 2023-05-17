@@ -40,7 +40,7 @@ public class Labyrinthe {
             } else if (macase.getPosY() == 0) {
                 Rocher r = new Rocher(macase);
                 macase.ajouterElementCase(r);
-            } else if (macase.getPosY() == this.nbcolonne - 1) {
+            } else if (macase.getPosY() == this.nbligne - 1) {
                 Rocher r = new Rocher(macase);
                 macase.ajouterElementCase(r);
             } else {
@@ -57,7 +57,7 @@ public class Labyrinthe {
         System.out.println(this.lesCases.size());
         for (Case macase : this.lesCases) {
 
-            if (macase.getPosY() == nbcolonne-1) {
+            if (macase.getPosY() == nbligne-1) {
 
                 System.out.println(macase.getElement().toString() +"\n ");
             } else {

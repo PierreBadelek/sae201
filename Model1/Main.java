@@ -1,7 +1,10 @@
 public class Main {
     public static void main(String[] args){
-        Labyrinthe laby = new Labyrinthe(5,5);
+        Labyrinthe laby = new Labyrinthe(7,6);
         laby.afficherLab();
+
+
+
         /*
         Case mc = new Case(0,2);
 
