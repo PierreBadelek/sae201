@@ -1,0 +1,21 @@
+package sae.model;
+
+public class Main {
+    public static void main(String[] args){
+        Labyrinthe laby = new Labyrinthe(7,6);
+        laby.afficherLab();
+
+
+
+        /*
+        Case mc = new Case(0,2);
+
+        Herbe monherbe = new Herbe(mc);
+        System.out.println(monherbe.getLacase().getPosX());
+        System.out.println(monherbe.getLacase().getPosY());
+
+        System.out.println(mc.getElement());
+        */
+
+    }
+}
